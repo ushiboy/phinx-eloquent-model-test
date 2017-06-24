@@ -1,0 +1,30 @@
+{
+  "name": "ushiboy/phinx-eloquent-model-test",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ushiboy/phinx"
+    }
+  ],
+  "scripts": {
+    "phinx": "phinx",
+    "test": "phpunit"
+  },
+  "require": {
+    "illuminate/database": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "MyApp\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MyApp\\Test\\": "test/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2",
+    "robmorgan/phinx": "dev-fix/sqlite"
+  }
+}
